@@ -1,0 +1,761 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean (Korea) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CAMC_QI.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CAMC_QI.ico"
+
+IDI_DOWN                ICON                    "res\\ARW03DN.ICO"
+
+IDI_LEFT                ICON                    "res\\ARW03LT.ICO"
+
+IDI_RIGHT               ICON                    "res\\ARW03RT.ICO"
+
+IDI_UP                  ICON                    "res\\ARW03UP.ICO"
+
+IDI_EMG                 ICON                    "res\\bad.ico"
+
+IDI_MOVE2               ICON                    "res\\dopoint.ico"
+
+IDI_STOP                ICON                    "res\\emark.ico"
+
+IDI_REPEAT              ICON                    "res\\fit.ico"
+
+IDI_SEARCH              ICON                    "res\\home.ico"
+
+IDI_MOVE                ICON                    "res\\motion.ico"
+
+IDI_CNTCLR              ICON                    "res\\npadb.ico"
+
+IDI_CIRCLE              ICON                    "res\\Radioactive.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "CAMC_QI Information"
+FONT 9, "굴림", 0, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CAMC_QI Version 1.2",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CAMC_QI_DIALOG DIALOGEX 0, 0, 639, 497
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_STATICEDGE | WS_EX_APPWINDOW
+CAPTION " "
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CBO_AXISSET,69,229,85,320,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_XYPLOT,"Static",SS_BLACKFRAME,377,1,261,188,WS_EX_DLGMODALFRAME
+    CTEXT           "Axis No",IDC_STATIC,12,225,50,18,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         "",IDC_LED_PELM,"Static",SS_BLACKFRAME,81,295,13,12
+    CONTROL         "",IDC_LED_NELM,"Static",SS_BLACKFRAME,81,311,13,12
+    CONTROL         "",IDC_LED_HOME,"Static",SS_BLACKFRAME,245,409,13,12
+    CONTROL         "",IDC_LED_ZPHASE,"Static",SS_BLACKFRAME,81,334,13,12
+    CONTROL         "",IDC_LED_INP,"Static",SS_BLACKFRAME,162,421,13,13
+    CONTROL         "",IDC_LED_ALARM,"Static",SS_BLACKFRAME,162,406,13,12
+    CTEXT           "Unit/Pulse",IDC_STATIC,14,199,48,20,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_MOVEUNIT,69,200,52,20,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE
+    RTEXT           "Start Speed",IDC_STATIC,537,200,39,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_STARTSPEED,577,200,24,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Setting",IDC_BTN_SETTING,602,200,31,16
+    CTEXT           "Pulseout_M",IDC_STATIC,377,218,46,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    COMBOBOX        IDC_CBO_PULSE_OUTM,438,220,73,134,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Encoder_M",IDC_STATIC,525,218,39,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    COMBOBOX        IDC_CBO_ENC_INPUTM,575,219,56,141,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "CMD POS",IDC_STATIC,442,242,48,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "ACT POS",IDC_STATIC,494,243,48,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "CMD VEL",IDC_STATIC,545,242,48,14,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Axis X",IDC_STATIC,385,259,46,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Axis Y",IDC_STATIC,385,278,46,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_CMD_POSX,442,259,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_ACT_POSX,494,261,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_VELX,546,261,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_POSY,443,278,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_ACT_POSY,494,280,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_VELY,547,281,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    CONTROL         "CNTCLR",IDC_BTN_COUNT_CLR,"Button",BS_OWNERDRAW | WS_TABSTOP,385,243,46,14
+    CTEXT           "Position",IDC_STATIC,386,356,44,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Velocity",IDC_STATIC,451,357,42,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Accel",IDC_STATIC,517,356,42,17,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CONTROL         "Absolute",IDC_CHK_ABSOLUTE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,389,399,41,10
+    CONTROL         "Relative",IDC_CHK_RELATIVE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,439,399,41,10
+    CONTROL         "S-Curve",IDC_CHK_SCURVE,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,539,398,41,10
+    EDITTEXT        IDC_EDT_POSITION,386,374,42,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_VELOCITY,451,375,42,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_ACCEL,517,374,42,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    CONTROL         "MOVE",IDC_BTN_MOVE,"Button",BS_OWNERDRAW | WS_TABSTOP,388,414,42,18
+    CONTROL         "Repeat",IDC_BTN_REPEAT,"Button",BS_OWNERDRAW | WS_TABSTOP,447,414,42,18
+    CONTROL         "ESTOP",IDC_BTN_ESTOP,"Button",BS_OWNERDRAW | WS_TABSTOP,119,354,58,16
+    GROUPBOX        "One Axis",IDC_STATIC,377,345,262,97
+    EDITTEXT        IDC_EDT_XCEN,14,356,48,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    LISTBOX         IDC_LST_LOG,16,438,334,49,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "STATUS",IDC_BTN_STATUS,262,423,59,16
+    CONTROL         "",IDC_GRAPHX,"Static",SS_BLACKFRAME,3,1,367,93,WS_EX_DLGMODALFRAME
+    CTEXT           "Decel",IDC_STATIC,582,356,45,17,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_DECEL,582,375,42,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    CONTROL         "",IDC_GRAPHY,"Static",SS_BLACKFRAME,3,95,367,93,WS_EX_DLGMODALFRAME
+    CONTROL         "Asym",IDC_CHK_ASYM,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,490,399,41,10
+    PUSHBUTTON      "Line",IDC_BTN_CONTI_LINE,526,444,36,18
+    PUSHBUTTON      "Start",IDC_BTN_CONTI_START,569,449,32,37
+    PUSHBUTTON      "CLR",IDC_BTN_CONTI_CLR,604,450,30,36
+    PUSHBUTTON      "2Axis Spline",IDC_BTN_CONTI_SPLINE,377,443,90,18
+    PUSHBUTTON      "Line && Circle",IDC_BTN_CONTI_BLEND,377,467,90,18
+    PUSHBUTTON      "Circle",IDC_BTN_CONTI_CIRCLE,476,443,42,18
+    GROUPBOX        "IoT",IDC_STATIC,3,256,110,72
+    CONTROL         "X-Y Syn",IDC_CHK_XY_SYNC,"Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,590,398,41,10
+    CTEXT           "Unit",IDC_STATIC,377,199,31,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_UNIT,409,200,45,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    CTEXT           "Pulse",IDC_STATIC,461,200,22,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_PULSE,485,200,49,16,ES_RIGHT | ES_AUTOHSCROLL,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "Verification",IDC_BTN_CONTI_TEST,475,468,88,18
+    PUSHBUTTON      "Manual Set",IDC_BTN_MANUALSET,182,423,58,16
+    CTEXT           "Axis Z",IDC_STATIC,385,298,46,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "Axis U",IDC_STATIC,385,321,46,16,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDT_CMD_POSZ,443,298,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_ACT_POSZ,495,298,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_VELZ,547,299,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_POSU,444,321,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_ACT_POSU,496,321,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    EDITTEXT        IDC_EDT_CMD_VELU,547,321,48,16,ES_RIGHT | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN,WS_EX_DLGMODALFRAME
+    PUSHBUTTON      "3D Graph",IDC_BTN_3DGRAPH,126,200,43,20
+    PUSHBUTTON      "SAVE SETTING",IDC_BTN_SAVE,118,264,58,15
+    PUSHBUTTON      "LOAD SETTING",IDC_BTN_LOAD,117,245,58,16
+    CONTROL         "",IDC_LED_EMG,"Static",SS_BLACKFRAME,246,425,14,12
+    PUSHBUTTON      "+",IDC_BTN_JOG_PX,601,260,17,16
+    PUSHBUTTON      "-",IDC_BTN_JOG_NX,619,260,16,16
+    PUSHBUTTON      "+",IDC_BTN_JOG_PY,603,281,15,16
+    PUSHBUTTON      "-",IDC_BTN_JOG_NY,619,282,16,16
+    PUSHBUTTON      "+",IDC_BTN_JOG_PZ,602,300,16,17
+    PUSHBUTTON      "-",IDC_BTN_JOG_NZ,618,300,16,17
+    PUSHBUTTON      "+",IDC_BTN_JOG_PU,602,322,16,15
+    PUSHBUTTON      "-",IDC_BTN_JOG_NU,618,321,16,16
+    CTEXT           "JOG",IDC_STATIC,604,241,30,15,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LISTBOX         IDC_LST_LOG_gcode,187,206,174,176,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "G_CODE",IDC_STATIC,180,195,182,190
+    GROUPBOX        "Status",IDC_STATIC,11,429,341,66
+    PUSHBUTTON      "LOAD G CODE",IDC_BTN_LOAD_gcode,118,281,58,16
+    PUSHBUTTON      "START",IDC_BTN_START_gcode,118,335,59,16
+    PUSHBUTTON      "TCP/IP",IDC_BTN_TCP_IP,165,386,49,19
+    PUSHBUTTON      "Connect",IDC_BTN_CNT_IoT,11,269,48,16
+    PUSHBUTTON      "SET SPEED",IDC_BTN_SET_SPD,69,354,49,17
+    PUSHBUTTON      "SPINDLE",IDC_BTN_SPL,11,332,49,17
+    PUSHBUTTON      "Disconnect",IDC_BTN_DISCNT_IoT,62,269,47,17
+    CTEXT           "Connect",IDC_STATIC,11,294,48,12,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    LISTBOX         IDC_LST_LOG2,31,378,129,49,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    CTEXT           "Internet",IDC_STATIC,10,311,48,12,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT1,217,391,44,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Send Data",IDC_BUTTON1,269,384,39,17
+    PUSHBUTTON      "Eto_stop",IDC_BUTTON2,316,401,36,14
+    PUSHBUTTON      "Recv Data",IDC_BUTTON3,272,405,38,18
+    PUSHBUTTON      "Eto_Up",IDC_BUTTON4,316,385,35,14
+    PUSHBUTTON      "RUN",IDC_BUTTON5,181,407,50,14
+    PUSHBUTTON      "SET HOME",IDC_BTN_SET_HOME,119,299,57,16
+    PUSHBUTTON      "GO HOME",IDC_BTN_GO_HOME,119,317,58,16
+    PUSHBUTTON      "Eto_back",IDC_BUTTON7,323,420,33,14
+END
+
+IDD_MANUAL_SET DIALOG 0, 0, 295, 88
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Manual Set"
+FONT 10, "Tahoma"
+BEGIN
+    PUSHBUTTON      "CMD",IDC_BTN_CMD,7,7,36,13
+    EDITTEXT        IDC_EDT_CMD,46,7,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA,86,7,58,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CBO_AXISSEL,190,7,98,121,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Hex/Dec",IDC_CHK_HEX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,7,37,12
+    PUSHBUTTON      "RD",IDC_BTN_RD,7,23,36,12
+    PUSHBUTTON      "WR",IDC_BTN_WR,46,23,36,12
+    EDITTEXT        IDC_EDT_CMD1,46,39,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA1,86,39,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CMD2,46,53,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA2,86,53,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CMD3,46,67,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA3,86,67,58,13,ES_AUTOHSCROLL
+    CONTROL         "On/Off",IDC_CHK_ONOFF1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,39,33,12
+    CONTROL         "On/Off",IDC_CHK_ONOFF2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,53,33,12
+    CONTROL         "On/Off",IDC_CHK_ONOFF3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,8,67,33,12
+    EDITTEXT        IDC_EDT_CMD4,190,39,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA4,231,39,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CMD5,190,53,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA5,231,53,58,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_CMD6,190,67,36,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDT_DATA6,231,67,58,13,ES_AUTOHSCROLL
+    CONTROL         "On/Off",IDC_CHK_ONOFF4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,39,33,12
+    CONTROL         "On/Off",IDC_CHK_ONOFF5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,53,33,12
+    CONTROL         "On/Off",IDC_CHK_ONOFF6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,149,67,33,12
+    COMBOBOX        IDC_CBO_PORT,86,23,58,101,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_STATUSVIEW DIALOG 0, 0, 268, 353
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Status View(END ,DRV)"
+FONT 9, "굴림"
+BEGIN
+    GROUPBOX        "Drive Status",IDC_STATIC,7,229,120,117
+    GROUPBOX        "End Status",IDC_STATIC,7,18,120,206
+    CONTROL         "",IDC_LED_XDRS00,"Static",SS_BLACKFRAME,13,330,9,9
+    CONTROL         "",IDC_LED_XDRS01,"Static",SS_BLACKFRAME,13,320,9,9
+    CONTROL         "",IDC_LED_XDRS02,"Static",SS_BLACKFRAME,13,310,9,9
+    CONTROL         "",IDC_LED_XDRS03,"Static",SS_BLACKFRAME,13,300,9,9
+    CONTROL         "",IDC_LED_XDRS04,"Static",SS_BLACKFRAME,13,290,9,9
+    CONTROL         "",IDC_LED_XDRS05,"Static",SS_BLACKFRAME,13,280,9,9
+    CONTROL         "",IDC_LED_XDRS06,"Static",SS_BLACKFRAME,13,270,9,9
+    CONTROL         "",IDC_LED_XDRS07,"Static",SS_BLACKFRAME,13,260,9,9
+    CONTROL         "",IDC_LED_XENS00,"Static",SS_BLACKFRAME,13,210,9,9
+    CONTROL         "",IDC_LED_XENS01,"Static",SS_BLACKFRAME,13,200,9,9
+    CONTROL         "",IDC_LED_XENS02,"Static",SS_BLACKFRAME,13,190,9,9
+    CONTROL         "",IDC_LED_XENS03,"Static",SS_BLACKFRAME,13,180,9,9
+    CONTROL         "",IDC_LED_XENS04,"Static",SS_BLACKFRAME,13,170,9,9
+    CONTROL         "",IDC_LED_XENS05,"Static",SS_BLACKFRAME,13,160,9,9
+    CONTROL         "",IDC_LED_XENS06,"Static",SS_BLACKFRAME,13,150,9,9
+    CONTROL         "",IDC_LED_XENS07,"Static",SS_BLACKFRAME,13,140,9,9
+    GROUPBOX        "X Axis: 00",IDC_STC_AXIS_X,7,7,124,339
+    GROUPBOX        "Drive Status",IDC_STATIC,137,229,120,117
+    GROUPBOX        "End Status",IDC_STATIC,137,18,120,206
+    CONTROL         "",IDC_LED_YDRS00,"Static",SS_BLACKFRAME,143,330,9,9
+    CONTROL         "",IDC_LED_YDRS01,"Static",SS_BLACKFRAME,143,320,9,9
+    CONTROL         "",IDC_LED_YDRS02,"Static",SS_BLACKFRAME,143,310,9,9
+    CONTROL         "",IDC_LED_YDRS03,"Static",SS_BLACKFRAME,143,300,9,9
+    CONTROL         "",IDC_LED_YDRS04,"Static",SS_BLACKFRAME,143,290,9,9
+    CONTROL         "",IDC_LED_YDRS05,"Static",SS_BLACKFRAME,143,280,9,9
+    CONTROL         "",IDC_LED_YDRS06,"Static",SS_BLACKFRAME,143,270,9,9
+    CONTROL         "",IDC_LED_YDRS07,"Static",SS_BLACKFRAME,143,260,9,9
+    CONTROL         "",IDC_LED_YENS00,"Static",SS_BLACKFRAME,143,210,9,9
+    CONTROL         "",IDC_LED_YENS01,"Static",SS_BLACKFRAME,143,200,9,9
+    CONTROL         "",IDC_LED_YENS02,"Static",SS_BLACKFRAME,143,190,9,9
+    CONTROL         "",IDC_LED_YENS03,"Static",SS_BLACKFRAME,143,180,9,9
+    CONTROL         "",IDC_LED_YENS04,"Static",SS_BLACKFRAME,143,170,9,9
+    CONTROL         "",IDC_LED_YENS05,"Static",SS_BLACKFRAME,143,160,9,9
+    CONTROL         "",IDC_LED_YENS06,"Static",SS_BLACKFRAME,143,150,9,9
+    CONTROL         "",IDC_LED_YENS07,"Static",SS_BLACKFRAME,143,140,9,9
+    GROUPBOX        "Y Axis: 00",IDC_STC_AXIS_Y,137,7,124,339
+    LTEXT           "7bit : ORG BUSY",IDC_STATIC,25,260,79,8
+    LTEXT           "6bit : MPG BUSY",IDC_STATIC,25,269,79,8
+    LTEXT           "5bit : PRESET BUSY",IDC_STATIC,25,280,79,8
+    LTEXT           "4bit : CONTI BUSY",IDC_STATIC,25,290,79,8
+    LTEXT           "3bit : UP",IDC_STATIC,25,300,79,8
+    LTEXT           "2bit : CONST",IDC_STATIC,25,310,79,8
+    LTEXT           "1bit : DOWN",IDC_STATIC,25,321,79,8
+    LTEXT           "0bit : BUSY",IDC_STATIC,25,330,79,8
+    LTEXT           "7bit : NSWSLMT stopped",IDC_STATIC,25,140,93,8
+    LTEXT           "6bit : PSWSLMT stopped",IDC_STATIC,25,150,93,8
+    LTEXT           "5bit : NSWLMT stopped",IDC_STATIC,25,160,93,8
+    LTEXT           "4bit : PSWLMT stopped",IDC_STATIC,25,170,93,8
+    LTEXT           "3bit : NSLM stopped",IDC_STATIC,25,180,93,8
+    LTEXT           "2bit : PSLM stopped",IDC_STATIC,25,190,93,8
+    LTEXT           "1bit : NELM stopped",IDC_STATIC,25,200,93,8
+    LTEXT           "0bit : PELM stopped",IDC_STATIC,25,210,93,8
+    LTEXT           "8bit : SVALARM stopped",IDC_STATIC,25,130,93,8
+    LTEXT           "9bit : ESTOP stopped",IDC_STATIC,25,120,93,8
+    LTEXT           "10bit : ESTOPCMD stopped",IDC_STATIC,25,110,93,8
+    LTEXT           "11bit : SSTOPCMD stopped",IDC_STATIC,25,100,93,8
+    LTEXT           "12bit : ESTOPALL stopped",IDC_STATIC,25,90,93,8
+    LTEXT           "13bit : SQSTP#1 stopped",IDC_STATIC,25,80,93,8
+    LTEXT           "14bit : SQSTP#2 stopped",IDC_STATIC,25,70,93,8
+    LTEXT           "15bit : ENCERR",IDC_STATIC,25,60,93,8
+    LTEXT           "16bit : MPGERR stopped",IDC_STATIC,25,50,93,8
+    LTEXT           "30bit : ERRSTATE",IDC_STATIC,25,40,93,8
+    LTEXT           "31bit : INPERR",IDC_STATIC,25,30,93,8
+    LTEXT           "10bit : SLAVE BUSY",IDC_STATIC,25,240,79,8
+    LTEXT           "9bit :INP BUSY",IDC_STATIC,25,250,79,8
+    CONTROL         "",IDC_LED_XDRS09,"Static",SS_BLACKFRAME,13,250,9,9
+    CONTROL         "",IDC_LED_XDRS10,"Static",SS_BLACKFRAME,13,240,9,9
+    CONTROL         "",IDC_LED_XENS08,"Static",SS_BLACKFRAME,13,130,9,9
+    CONTROL         "",IDC_LED_XENS09,"Static",SS_BLACKFRAME,13,120,9,9
+    CONTROL         "",IDC_LED_XENS10,"Static",SS_BLACKFRAME,13,110,9,9
+    CONTROL         "",IDC_LED_XENS11,"Static",SS_BLACKFRAME,13,100,9,9
+    CONTROL         "",IDC_LED_XENS12,"Static",SS_BLACKFRAME,13,90,9,9
+    CONTROL         "",IDC_LED_XENS13,"Static",SS_BLACKFRAME,13,80,9,9
+    CONTROL         "",IDC_LED_XENS14,"Static",SS_BLACKFRAME,13,70,9,9
+    CONTROL         "",IDC_LED_XENS15,"Static",SS_BLACKFRAME,13,60,9,9
+    CONTROL         "",IDC_LED_XENS16,"Static",SS_BLACKFRAME,13,50,9,9
+    CONTROL         "",IDC_LED_XENS30,"Static",SS_BLACKFRAME,13,40,9,9
+    CONTROL         "",IDC_LED_XENS31,"Static",SS_BLACKFRAME,13,30,9,9
+    LTEXT           "7bit : ORG BUSY",IDC_STATIC,156,260,79,8
+    LTEXT           "6bit : MPG BUSY",IDC_STATIC,156,269,79,8
+    LTEXT           "5bit : PRESET BUSY",IDC_STATIC,156,280,79,8
+    LTEXT           "4bit : CONTI BUSY",IDC_STATIC,156,290,79,8
+    LTEXT           "3bit : UP",IDC_STATIC,156,300,79,8
+    LTEXT           "2bit : CONST",IDC_STATIC,156,310,79,8
+    LTEXT           "1bit : DOWN",IDC_STATIC,156,321,79,8
+    LTEXT           "0bit : BUSY",IDC_STATIC,156,330,79,8
+    LTEXT           "10bit : SLAVE BUSY",IDC_STATIC,156,240,79,8
+    LTEXT           "9bit :INP BUSY",IDC_STATIC,156,250,79,8
+    LTEXT           "7bit : NSWSLMT stopped",IDC_STATIC,157,140,93,8
+    LTEXT           "6bit : PSWSLMT stopped",IDC_STATIC,157,150,93,8
+    LTEXT           "5bit : NSWLMT stopped",IDC_STATIC,157,160,93,8
+    LTEXT           "4bit : PSWLMT stopped",IDC_STATIC,157,170,93,8
+    LTEXT           "3bit : NSLM stopped",IDC_STATIC,157,180,93,8
+    LTEXT           "2bit : PSLM stopped",IDC_STATIC,157,190,93,8
+    LTEXT           "1bit : NELM stopped",IDC_STATIC,157,200,93,8
+    LTEXT           "0bit : PELM stopped",IDC_STATIC,157,210,93,8
+    LTEXT           "8bit : SVALARM stopped",IDC_STATIC,157,130,93,8
+    LTEXT           "9bit : ESTOP stopped",IDC_STATIC,157,120,93,8
+    LTEXT           "10bit : ESTOPCMD stopped",IDC_STATIC,157,110,93,8
+    LTEXT           "11bit : SSTOPCMD stopped",IDC_STATIC,157,100,93,8
+    LTEXT           "12bit : ESTOPALL stopped",IDC_STATIC,157,90,93,8
+    LTEXT           "13bit : SQSTP#1 stopped",IDC_STATIC,157,80,93,8
+    LTEXT           "14bit : SQSTP#2 stopped",IDC_STATIC,157,70,93,8
+    LTEXT           "15bit : ENCERR",IDC_STATIC,157,60,93,8
+    LTEXT           "16bit : MPGERR stopped",IDC_STATIC,157,50,93,8
+    LTEXT           "30bit : ERRSTATE",IDC_STATIC,157,40,93,8
+    LTEXT           "31bit : INPERR",IDC_STATIC,157,30,93,8
+    CONTROL         "",IDC_LED_YDRS09,"Static",SS_BLACKFRAME,143,250,9,9
+    CONTROL         "",IDC_LED_YDRS10,"Static",SS_BLACKFRAME,143,240,9,9
+    CONTROL         "",IDC_LED_YENS08,"Static",SS_BLACKFRAME,143,130,9,9
+    CONTROL         "",IDC_LED_YENS09,"Static",SS_BLACKFRAME,143,120,9,9
+    CONTROL         "",IDC_LED_YENS10,"Static",SS_BLACKFRAME,143,110,9,9
+    CONTROL         "",IDC_LED_YENS11,"Static",SS_BLACKFRAME,143,100,9,9
+    CONTROL         "",IDC_LED_YENS12,"Static",SS_BLACKFRAME,143,90,9,9
+    CONTROL         "",IDC_LED_YENS13,"Static",SS_BLACKFRAME,143,80,9,9
+    CONTROL         "",IDC_LED_YENS14,"Static",SS_BLACKFRAME,143,70,9,9
+    CONTROL         "",IDC_LED_YENS15,"Static",SS_BLACKFRAME,143,60,9,9
+    CONTROL         "",IDC_LED_YENS16,"Static",SS_BLACKFRAME,143,50,9,9
+    CONTROL         "",IDC_LED_YENS30,"Static",SS_BLACKFRAME,143,40,9,9
+    CONTROL         "",IDC_LED_YENS31,"Static",SS_BLACKFRAME,143,30,9,9
+    PUSHBUTTON      "<<",IDC_BTN_PREV,223,1,14,10
+    PUSHBUTTON      ">>",IDC_BTN_NEXT,247,1,14,10
+    PUSHBUTTON      "||",IDC_BTN_CUR,237,1,9,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,2
+ PRODUCTVERSION 1,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204b0"
+        BEGIN
+            VALUE "FileDescription", "CAMC_QI MFC 응용 프로그램"
+            VALUE "FileVersion", "1, 0, 0, 2"
+            VALUE "InternalName", "CAMC_QI"
+            VALUE "LegalCopyright", "Copyright (C) 2003"
+            VALUE "OriginalFilename", "CAMC_QI.EXE"
+            VALUE "ProductName", "CAMC_QI 응용 프로그램"
+            VALUE "ProductVersion", "1, 0, 0, 2"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CAMC_QI_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        VERTGUIDE, 3
+        VERTGUIDE, 370
+        VERTGUIDE, 377
+        BOTTOMMARGIN, 495
+        HORZGUIDE, 1
+        HORZGUIDE, 188
+    END
+
+    IDD_MANUAL_SET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 288
+        VERTGUIDE, 8
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_STATUSVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 261
+        VERTGUIDE, 13
+        VERTGUIDE, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 346
+        HORZGUIDE, 16
+        HORZGUIDE, 30
+        HORZGUIDE, 240
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAMC_QI_DIALOG DLGINIT
+BEGIN
+    IDC_CBO_PULSE_OUTM, 0x403, 15, 0
+0x6e4f, 0x4865, 0x6769, 0x4c68, 0x776f, 0x6948, 0x6867, "\000" 
+    IDC_CBO_PULSE_OUTM, 0x403, 15, 0
+0x6e4f, 0x4865, 0x6769, 0x4868, 0x6769, 0x4c68, 0x776f, "\000" 
+    IDC_CBO_PULSE_OUTM, 0x403, 14, 0
+0x6e4f, 0x4c65, 0x776f, 0x6f4c, 0x4877, 0x6769, 0x0068, 
+    IDC_CBO_PULSE_OUTM, 0x403, 14, 0
+0x6e4f, 0x4c65, 0x776f, 0x6948, 0x6867, 0x6f4c, 0x0077, 
+    IDC_CBO_PULSE_OUTM, 0x403, 13, 0
+0x7754, 0x436f, 0x7763, 0x7743, 0x6948, 0x6867, "\000" 
+    IDC_CBO_PULSE_OUTM, 0x403, 12, 0
+0x7754, 0x436f, 0x7763, 0x7743, 0x6f4c, 0x0077, 
+    IDC_CBO_PULSE_OUTM, 0x403, 13, 0
+0x7754, 0x436f, 0x4377, 0x7763, 0x6948, 0x6867, "\000" 
+    IDC_CBO_PULSE_OUTM, 0x403, 12, 0
+0x7754, 0x436f, 0x4377, 0x7763, 0x6f4c, 0x0077, 
+    IDC_CBO_PULSE_OUTM, 0x403, 9, 0
+0x7754, 0x506f, 0x6168, 0x6573, "\000" 
+    IDC_CBO_PULSE_OUTM, 0x403, 16, 0
+0x7754, 0x506f, 0x6168, 0x6573, 0x6552, 0x6576, 0x7372, 0x0065, 
+    IDC_CBO_ENC_INPUTM, 0x403, 8, 0
+0x7055, 0x442f, 0x776f, 0x006e, 
+    IDC_CBO_ENC_INPUTM, 0x403, 11, 0
+0x2031, 0x754d, 0x746c, 0x7069, 0x656c, "\000" 
+    IDC_CBO_ENC_INPUTM, 0x403, 12, 0
+0x2032, 0x754d, 0x746c, 0x7069, 0x656c, 0x0073, 
+    IDC_CBO_ENC_INPUTM, 0x403, 12, 0
+0x2034, 0x754d, 0x746c, 0x7069, 0x656c, 0x0073, 
+    IDC_CBO_ENC_INPUTM, 0x403, 12, 0
+0x6552, 0x2076, 0x7055, 0x442f, 0x776f, 0x006e, 
+    IDC_CBO_ENC_INPUTM, 0x403, 15, 0
+0x6552, 0x2076, 0x2031, 0x754d, 0x746c, 0x7069, 0x656c, "\000" 
+    IDC_CBO_ENC_INPUTM, 0x403, 16, 0
+0x6552, 0x2076, 0x2032, 0x754d, 0x746c, 0x7069, 0x656c, 0x0073, 
+    IDC_CBO_ENC_INPUTM, 0x403, 16, 0
+0x6552, 0x2076, 0x2034, 0x754d, 0x746c, 0x7069, 0x656c, 0x0073, 
+    0
+END
+
+IDD_MANUAL_SET DLGINIT
+BEGIN
+    IDC_CBO_PORT, 0x403, 8, 0
+0x4144, 0x4154, 0x4c50, 0x0030, 
+    IDC_CBO_PORT, 0x403, 8, 0
+0x4144, 0x4154, 0x4c50, 0x0031, 
+    IDC_CBO_PORT, 0x403, 8, 0
+0x4144, 0x4154, 0x4d50, 0x0030, 
+    IDC_CBO_PORT, 0x403, 8, 0
+0x4144, 0x4154, 0x4d50, 0x0031, 
+    IDC_CBO_PORT, 0x403, 6, 0
+0x4d43, 0x5044, 0x0030, 
+    IDC_CBO_PORT, 0x403, 6, 0
+0x4d43, 0x5044, 0x0031, 
+    IDC_CBO_PORT, 0x403, 6, 0
+0x4955, 0x504f, 0x0030, 
+    IDC_CBO_PORT, 0x403, 6, 0
+0x4955, 0x504f, 0x0031, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_CAMC_QI_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "CAMC_QI 정보(&A)..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING1001          "궁서"
+    IDS_STRING1002          "굴림"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING1003          "CAMC - IP 모듈을 초기화하지 못했습니다."
+    IDS_STRING1004          "드라이버를 오픈하지 못했습니다."
+    IDS_STRING1005          "검색을 하지 못했습니다."
+    IDS_STRING1006          "%d 축의 %s을 검색 완료하였습니다."
+    IDS_STRING1007          "Trigger Interrupt를 %d축에서 사용하도록 설정하였습니다."
+    IDS_STRING1008          "Trigger Interrupt 사용을 설정할 수 없습니다."
+    IDS_STRING1009          "인터럽트가 %d번째 보드 %d번 모듈에서 발생하였습니다.\nInterrupt Flag : %X"
+    IDS_STRING1010          "X축"
+    IDS_STRING1011          "Y축"
+    IDS_STRING1012          "Korean"
+    IDS_STRING1013          "%d 축의 %s을 검색 종료하였습니다."
+    IDS_STRING1014          "%d 축이 다른 원인으로 검색 종료하였습니다."
+END
+
+#endif    // Korean (Korea) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_3DGRAPH DIALOGEX 0, 0, 418, 225
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Simulation"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,76,194,64,24
+    LTEXT           "X CMD:",IDC_STC_XCMD,152,11,25,8
+    CONTROL         "",IDC_PIC_3DGRAPH,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,147,7,264,211
+    PUSHBUTTON      "Helical",IDC_BTN_HEL_ADD,7,128,64,23
+    PUSHBUTTON      "Helical Play",IDC_BTN_HEL_PLAY,7,154,64,23
+    PUSHBUTTON      "Spline",IDC_BTN_SPL_ADD,76,128,64,23
+    PUSHBUTTON      "Spline Play",IDC_BTN_SPL_PLAY,76,154,64,23
+    PUSHBUTTON      "Clear",IDC_BTN_CLEAR,7,194,64,24
+    LTEXT           "Y CMD:",IDC_STC_YCMD,152,21,25,8
+    LTEXT           "Z CMD:",IDC_STC_ZCMD,152,31,25,8
+    RTEXT           "0.000",IDC_STC_XCMDPOS,181,11,33,8
+    RTEXT           "0.000",IDC_STC_YCMDPOS,181,21,33,8
+    RTEXT           "0.000",IDC_STC_ZCMDPOS,181,31,33,8
+    GROUPBOX        "Graph properties",IDC_STC_GRAPHATT,7,7,134,115
+    LTEXT           "Dimension",IDC_STC_DIMENSION,13,36,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CMB_DIMENSION,55,36,81,43,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Reset Axis",IDC_STC_AXISRESET,13,20,36,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_CMB_AXISRESET,55,20,81,56,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Plot Color",IDC_STC_PLOTCOLOR,13,53,33,10,SS_CENTERIMAGE
+    CONTROL         "",IDC_BTN_PLOTCOLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,55,53,14,10
+    CONTROL         "Box Enable",IDC_CHK_BOX,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,82,53,50,10
+    EDITTEXT        IDC_EDIT_RANGEX,13,84,38,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RANGEY,55,84,38,14,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RANGEZ,96,84,38,14,ES_RIGHT | ES_AUTOHSCROLL
+    CTEXT           "X RANGE",IDC_STATIC,13,71,38,11,0,WS_EX_CLIENTEDGE
+    CTEXT           "Y RANGE",IDC_STATIC,55,71,38,11,0,WS_EX_CLIENTEDGE
+    CTEXT           "Z RANGE",IDC_STATIC,96,71,38,11,0,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "SetRange",IDC_BUTTON_SETRANGE,13,102,121,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_3DGRAPH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 411
+        VERTGUIDE, 13
+        VERTGUIDE, 17
+        VERTGUIDE, 76
+        VERTGUIDE, 88
+        VERTGUIDE, 147
+        VERTGUIDE, 155
+        VERTGUIDE, 159
+        VERTGUIDE, 188
+        VERTGUIDE, 215
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+        HORZGUIDE, 140
+        HORZGUIDE, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_3DGRAPH DLGINIT
+BEGIN
+    IDC_CMB_DIMENSION, 0x403, 16, 0
+0x2058, 0x202d, 0x2059, 0x6944, 0x656d, 0x736e, 0x6f69, 0x006e, 
+    IDC_CMB_DIMENSION, 0x403, 16, 0
+0x2059, 0x202d, 0x205a, 0x6944, 0x656d, 0x736e, 0x6f69, 0x006e, 
+    IDC_CMB_DIMENSION, 0x403, 16, 0
+0x2058, 0x202d, 0x205a, 0x6944, 0x656d, 0x736e, 0x6f69, 0x006e, 
+    IDC_CMB_DIMENSION, 0x403, 20, 0
+0x2058, 0x202d, 0x2059, 0x202d, 0x205a, 0x6944, 0x656d, 0x736e, 0x6f69, 
+0x006e, 
+    IDC_CMB_AXISRESET, 0x403, 11, 0
+0x2058, 0x202d, 0x2059, 0x7841, 0x7369, "\000" 
+    IDC_CMB_AXISRESET, 0x403, 11, 0
+0x2059, 0x202d, 0x205a, 0x7841, 0x7369, "\000" 
+    IDC_CMB_AXISRESET, 0x403, 11, 0
+0x2058, 0x202d, 0x205a, 0x7841, 0x7369, "\000" 
+    IDC_CMB_AXISRESET, 0x403, 15, 0
+0x2058, 0x202d, 0x2059, 0x202d, 0x205a, 0x7841, 0x7369, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "&About CAMCIP..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING1001          "MS Sans Serif"
+    IDS_STRING1002          "MS Sans Serif"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STRING1003          "CAMC-IP Module Not initialized."
+    IDS_STRING1004          "Baseboard Not initialized."
+    IDS_STRING1005          "DeviceDriver not opened."
+    IDS_STRING1006          "Search complete - %s of axis:%d."
+    IDS_STRING1007          "Setting Trigger Interrupt - Axis:%d."
+    IDS_STRING1008          "Can't used Trigger Interrupt."
+    IDS_STRING1009          "Interrupt occurred - Baseboard:%d Module:%d\nInterrupt Flag : %X."
+    IDS_STRING1010          "Axis X"
+    IDS_STRING1011          "Axis Y"
+    IDS_STRING1012          "English"
+    IDS_STRING1013          "Search end  - %s of axis:%d."
+    IDS_STRING1014          "Search end by other reason - axis:%d."
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\CAMC_QI.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
